@@ -59,7 +59,11 @@ return require('packer').startup(function(use)
             'ryanoasis/vim-devicons',
             'philrunninger/nerdtree-buffer-ops',
             'tiagofumo/vim-nerdtree-syntax-highlight',
+            'philrunninger/nerdtree-visual-selection'
         }
     }
+
+    use 'jose-elias-alvarez/null-ls.nvim'
+    use 'muniftanjim/prettier.nvim'
 
 end)
