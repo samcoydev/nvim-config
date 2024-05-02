@@ -2,6 +2,10 @@ local lsp = require("lsp-zero")
 
 lsp.preset("recommended")
 
+lsp.on_attach(function(client, bufnr)
+    lsp.default_keymaps({buffer = bufnr})
+end)
+
 require('mason').setup({})
 require('mason-lspconfig').setup({
 	-- Replace the language servers listed here

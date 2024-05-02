@@ -25,3 +25,5 @@ vim.opt.colorcolumn = "80"
 vim.g.mapleader = " "
 
 vim.opt.clipboard = "unnamed"
+
+vim.api.nvim_set_keymap("t", "<Esc>", "<C-\\><C-n>", { noremap = true })
