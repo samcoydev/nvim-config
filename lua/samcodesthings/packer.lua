@@ -31,6 +31,13 @@ return require('packer').startup(function(use)
         }
     }
 
+    use {
+        "williamboman/mason.nvim",
+        opts = function(_, opts)
+            table.insert(opts.ensure_installed, "prettier")
+        end,
+    }
+
     use 'm4xshen/autoclose.nvim'
 
     use 'tpope/vim-fugitive'
@@ -65,6 +72,4 @@ return require('packer').startup(function(use)
 
     use 'jose-elias-alvarez/null-ls.nvim'
     use 'muniftanjim/prettier.nvim'
-
-    use "stevearc/conform.nvim"
 end)

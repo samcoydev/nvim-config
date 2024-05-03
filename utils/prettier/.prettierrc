@@ -1,0 +1,103 @@
+{
+  "endOfLine": "crlf",
+  "tabWidth": 4,
+  "useTabs": false,
+  "printWidth": 120,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "bracketSpacing": false,
+  "insertPragma": true,
+  "jsxBracketSameLine": true,
+  "arrowParens": "always",
+  "overrides": [
+    {
+      "files": [
+        "*.prisma"
+      ],
+      "options": {
+        "tabWidth": 2,
+        "useTabs": false
+      }
+    },
+    {
+      "files": [
+        "*.css"
+      ],
+      "options": {
+        "singleQuote": false,
+        "trailingComma": "none",
+        "bracketSpacing": true
+      }
+    },
+    {
+      "files": [
+        "*.bash",
+        "*.sh",
+        "*.zsh"
+      ],
+      "options": {
+        "tabWidth": 2
+      }
+    },
+    {
+      "files": [
+        "*.cjs",
+        "*.js"
+      ],
+      "options": {
+        "tabWidth": 4
+      }
+    },
+    {
+      "files": [
+        "*.json",
+        "*.jsonc",
+        ".babelrc",
+        ".eslintrc",
+        ".prettierrc",
+        ".stylelintrc",
+        "bowerrc",
+        "jest.config"
+      ],
+      "options": {
+        "tabWidth": 2,
+        "printWidth": 0,
+        "bracketSpacing": true,
+        "quoteProps": "as-needed",
+        "singleQuote": false,
+        "trailingComma": "none"
+      }
+    },
+    {
+      "files": [
+        "*.html",
+        "*.htm",
+        "*.sht",
+        "*.shtm",
+        "*.shtml"
+      ],
+      "options": {
+        "tabWidth": 2,
+        "printWidth": 0,
+        "quoteProps": "as-needed",
+        "singleQuote": false,
+        "trailingComma": "none",
+        "htmlWhitespaceSensitivity": "css"
+      }
+    },
+    {
+      "files": [
+        "*.yaml",
+        "*.yml"
+      ],
+      "options": {
+        "tabWidth": 2,
+        "printWidth": 0,
+        "quoteProps": "as-needed",
+        "singleQuote": false,
+        "trailingComma": "none",
+        "yamlQuoteSingle": true
+      }
+    }
+  ]
+}
