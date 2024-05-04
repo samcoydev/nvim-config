@@ -14,6 +14,8 @@ return require('packer').startup(function(use)
 
     use "rebelot/kanagawa.nvim"
 
+    use 'scottmckendry/cyberdream.nvim'
+
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
 
     use {
