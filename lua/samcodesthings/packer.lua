@@ -61,17 +61,18 @@ return require('packer').startup(function(use)
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
 
+    use 'hiphish/rainbow-delimiters.nvim'
+
     use {
-        'preservim/nerdtree',
+        'nvim-tree/nvim-tree.lua',
         requires = {
-            'xuyuanp/nerdtree-git-plugin',
-            'ryanoasis/vim-devicons',
-            'philrunninger/nerdtree-buffer-ops',
-            'tiagofumo/vim-nerdtree-syntax-highlight',
-            'philrunninger/nerdtree-visual-selection'
+            'nvim-tree/nvim-web-devicons'
         }
     }
 
     use 'jose-elias-alvarez/null-ls.nvim'
     use 'muniftanjim/prettier.nvim'
+    use "folke/which-key.nvim"
+
+    use 'stevearc/oil.nvim'
 end)
